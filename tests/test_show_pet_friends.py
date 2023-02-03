@@ -17,7 +17,7 @@ def test_show_pet_friends():
    pytest.driver.find_element_by_css_selector('button[type="submit"]').click()
 
    # Проверяем, что мы оказались на главной странице пользователя
-   assert pytest.driver.current_url == 'http://petfriends1.herokuapp.com/all_pets'
+   assert pytest.driver.current_url == 'http://petfriends.skillfactory.ru/all_pets'
 
    images = pytest.driver.find_elements_by_css_selector('.card-deck .card-img-top')
    names = pytest.driver.find_elements_by_css_selector('.card-deck .card-title')
